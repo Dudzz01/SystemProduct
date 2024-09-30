@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oak Tecnologia Products</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            Oak Tecnologia Products
+        </h1>
+    </header>
+
+    <div class="main">
+
+        <div class="container">
+
+            <form id="form-products">
+
+                <div class="text-form">
+
+                    <label for="product-name">Nome do produto</label>
+                    <input id="product-name" type="text" name="product-name" placeholder="Insira o nome do produto"
+                        required>
+
+                </div>
+
+                <div class="text-form">
+
+                    <label for="product-descricao">Descrição do produto</label>
+                    <input id="product-descricao" type="text" name="product-descricao" placeholder="Insira a descrição do produto"
+                        required>
+
+                </div>
+
+                <div class="text-form">
+
+                    <label for="product-value">Valor do produto</label>
+                    <input id="product-value" type="number" name="product-value" placeholder="Insira o valor do produto"
+                        required>
+
+                </div>
+
+                <div class="text-form">
+
+                    <p>Disponível para venda?</p>
+                    <br>
+                    <label for="product-disponivel">
+                    <input id="product-disponivel" type="radio" name="opcao" value="sim"
+                        required> Sim
+                    </label>   
+                    <label for="product-indisponivel">
+                        <input id="product-indisponivel" type="radio" name="opcao" value="nao"
+                            required> Não
+                        </label>   
+
+                </div>
+
+            </form>
+
+            <div class="lista-produtos">
+                <ol>
+                    
+                </ol>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
