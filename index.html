@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oak Tecnologia Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
+<div class="">
 
+</div>
     <header id="title">
         <h1>
             Oak Tecnologia Products
@@ -44,9 +48,11 @@
 
                     <label for="product-value">Valor do produto</label>
                     <input id="product-value" type="number" name="product-value" placeholder="Insira o valor do produto"
-                        required>
+                        required step="0.01">
 
                 </div>
+
+              
 
                 <div class="text-form">
 
@@ -63,13 +69,85 @@
 
                 </div>
 
+                <div class="text-form">
+                    <input type="submit" id="submitButton" value="Cadastro Produto📤"/>
+                </div>
+
+                
+
+            
+
             </form>
 
-            <div>
-                <ol id="lista-produtos">
-                    <li>Item 1</li>
-                    
+            <div id="popupForm" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Formulário</h2>
+                    <form id="popupForm-id">
+                        
+                <div class="text-form">
+
+                    <label for="popup-product-name">Nome do produto</label>
+                    <input id="popup-product-name" type="text" name="popup-product-name" placeholder="Insira o nome do produto"
+                        required>
+
+                </div>
+
+                <div class="text-form">
+
+                    <label for="popup-product-descricao">Descrição do produto</label>
+                    <input id="popup-product-descricao" type="text" name="popup-product-descricao" placeholder="Insira a descrição do produto"
+                        required>
+
+                </div>
+
+                <div class="text-form">
+
+                    <label for="popup-product-value">Valor do produto</label>
+                    <input id="popup-product-value" type="number" name="popup-product-value" placeholder="Insira o valor do produto"
+                        required step="0.01">
+
+                </div>
+
+              
+
+                <div class="text-form">
+
+                    <p>Disponível para venda?</p>
+                    <br>
+                    <label for="popup-product-disponivel">
+                    <input id="popup-product-disponivel" type="radio" name="opcao" value="sim"
+                        required> Sim
+                    </label>   
+                    <label for="popup-product-indisponivel">
+                        <input id="popup-product-indisponivel" type="radio" name="opcao" value="nao"
+                            required> Não
+                        </label>   
+
+                </div>
+
+                <div class="text-form">
+                    <input type="submit" id="submitButtonPopup" value="Cadastro Produto📤"/>
+                </div>
+                    </form>
+                </div>
+            </div>
+        
+            <div class="container-lista-geral">
+                <ol class="lista-produto">
+                    <li class="lista-nome">Nome
+                        <ol id="lista-nome-id">
+                            
+                        </ol>
+                    </li>
+
+                    <li class="lista-valor">Valor
+                        <ol id="lista-valor-id">
+                            
+                        </ol>
+                    </li>
                 </ol>
+                <button id="openPopupBtn">Adicionar Produto</button>
             </div>
 
         </div>
