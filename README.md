@@ -1,2 +1,2 @@
 # SystemProduct
- Mini sistema de cradastrar e listar produtos
+ Mini sistema de cadastrar e listar produtos
